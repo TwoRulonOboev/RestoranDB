@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Glavnoe" Height="700" Width="1200" Background="#111">
+    <Window.Resources>
+        <SolidColorBrush x:Key="mouseOverColor"
+                    Color="#111" />
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="37*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button1" Content="Просмотр и редактирование данных в таблицах" Background="#000" Foreground="#fff" HorizontalAlignment="Center" Margin="0,151,0,0" VerticalAlignment="Top" Height="34" Width="296" Click="Button_Click"></Button>
+        <Button x:Name="button2" Content="Вывести информации о бронировании" Background="#000" Foreground="#fff" HorizontalAlignment="Center" Margin="0,287,0,0" VerticalAlignment="Top" Height="30" Width="296" Click="Button_Click_1"/>
+        <Button x:Name="button3" Content="получить выручку ресторана" Background="#000" Foreground="#fff" HorizontalAlignment="Center" Margin="0,357,0,0" VerticalAlignment="Top" Height="30" Width="296" Click="Button_Click_2"/>
+        <Button x:Name="button4" Content="создать бланк счета" Background="#000" Foreground="#fff" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" Width="296" Click="Button_Click_3" Margin="0,322,0,0"/>
+        <Button x:Name="button5" Content="Вывести информацию о заказах" Background="#000" Foreground="#fff" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="30" Width="296" Click="Button_Click_4"/>
+        <Button x:Name="button6" Content="Вывести меню по категориям" Background="#000" Foreground="#fff" HorizontalAlignment="Center" Margin="0,252,0,0" VerticalAlignment="Top" Height="30" Width="296" Click="Button_Click_5"/>
+        <Button x:Name="button7" Content="проверки наличия свободных столиков" Background="#000" Foreground="#fff" HorizontalAlignment="Center" Margin="0,392,0,0" VerticalAlignment="Top" Height="30" Width="296" Click="Button_Click_6"/>
+        <Frame x:Name="MainFrame" Grid.Column="1" Margin="10,10,10,10" Background="#222"/>
+    </Grid>
+</Window>
